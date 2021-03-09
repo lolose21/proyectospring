@@ -27,6 +27,11 @@
                         Colecciones Personas
                     </a>
                 </li>
+                <li>
+                    <a href="web05tablamultiplicar.htm">
+                        TABLA MULTIPLICAR
+                    </a>
+                </li>
             </ol>
     </body>
 </html>
