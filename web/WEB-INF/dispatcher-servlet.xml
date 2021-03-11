@@ -15,6 +15,12 @@
     <bean class="controllers.Controller03InfoViewController" id="controller03"/>
     <bean class="controllers.Controller04Colecciones" id="controller04"/>
     <bean class="controllers.Controller05TablaMultiplicar" id="controller05"/>
+    <bean class="controllers.Controller06Departamentos" id="controller06"/>
+    <bean class="controllers.Controller07ObjetosContainer" id="controller07"/>
+    <bean class="controllers.Controller08ContainerDepartamentos" id="controller08"/>
+    <bean class="controllers.ControllerTenista" id="controllertenis"/>
+    <bean  class="controllers.Controller10DepartamentosContainer" id="controller10"/>
+    <bean class="controllers.Controller11Hospitales" id="controller11"/>
 
     <!--
     Most controllers will use the ControllerClassNameHandlerMapping above, but
@@ -30,6 +36,12 @@
                 <prop key="web03infoviewcontroller.htm">controller03</prop>
                 <prop key="web04colecciones.htm">controller04</prop>
                 <prop key="web05tablamultiplicar.htm">controller05</prop>
+                <prop key="web06departamentos.htm">controller06</prop>
+                <prop key="web07objetoscontainer.htm">controller07</prop>
+                <prop key="web08containerdepartamentos.htm">controller08</prop>
+                <prop key="webtenista.htm">controllertenis</prop>
+                <prop key="web10departamentoscontainer.htm">controller10</prop>
+                <prop key="web11hospitales.htm">controller11</prop>
             </props>
         </property>
     </bean>

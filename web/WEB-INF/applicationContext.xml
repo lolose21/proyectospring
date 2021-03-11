@@ -12,14 +12,53 @@
     <!--bean id="propertyConfigurer"
           class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
           p:location="/WEB-INF/jdbc.properties" />
-
-<bean id="dataSource"
+/-->
+<bean id="dataSourceOracle"
     class="org.springframework.jdbc.datasource.DriverManagerDataSource"
-    p:driverClassName="${jdbc.driverClassName}"
-    p:url="${jdbc.url}"
-    p:username="${jdbc.username}"
-    p:password="${jdbc.password}" /-->
+    p:driverClassName="oracle.jdbc.OracleDriver"
+    p:url="jdbc:oracle:thin:@LOCALHOST:1521:XE"
+    p:username="system"
+    p:password="oracle" />
+
 
     <!-- ADD PERSISTENCE SUPPORT HERE (jpa, hibernate, etc) -->
-
+    <bean id="repositorydepartamentos"
+          class="repositories.RepositoriesDepartamentosContainer">
+    <constructor-arg ref="dataSourceOracle"/>
+    </bean>
+    
+    <bean id="repositoryhospital" 
+          class="repositories.Repository11Hospitales">
+    <constructor-arg ref="dataSourceOracle"/>
+    </bean>
+          
+    
+    
+        
+        
+        
+    <bean id="car" class="models.Coche" 
+        p:marca="Lamborghini"
+        p:modelo="Diablo"
+        p:velocidadMaxima="340">
+    </bean>
+    <bean id="kit" class="models.Coche"
+    p:marca= "Potiac"
+    p:modelo="Firebird"
+    p:velocidadMaxima="540"/>
+    
+    <bean id="driver" class="models.Conductor"
+          p:nombre="Michael Knight">
+        <constructor-arg ref="car"/>
+          <property name="coche" ref="kit"/>
+    </bean>
+    <bean  id="tenis" class="models.Tenista"
+        p:nombre = "Rafael"
+        p:imagen = "https://ep01.epimg.net/elpais/imagenes/2020/12/17/eps/1608163209_147584_1608163356_noticia_normal.jpg"
+           p:palmares="20">
+    </bean>
+    <bean id="grandslam" class="models.GrandSlam"
+        p:descripcion="roland">
+        <property name="tenista" ref="rafa"/>
+        </bean>
 </beans>

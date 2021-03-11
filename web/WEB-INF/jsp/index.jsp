@@ -32,6 +32,36 @@
                         TABLA MULTIPLICAR
                     </a>
                 </li>
+                <li>
+                    <a href="web06departamentos.htm">
+                        DEPARTAMENTOS
+                    </a>
+                </li>
+                <li>
+                    <a href="web07objetoscontainer.htm">
+                        Objetos
+                    </a>
+                </li>
+                <li>
+                    <a href="web08containerdepartamentos.htm">
+                        container departamentos
+                    </a>
+                </li>
+                <li>
+                    <a href="webtenista.htm">
+                        TENISTA
+                    </a>
+                </li>
+                <li>
+                    <a href="web10departamentoscontainer.htm">
+                        DEPARTAMENTOS CONTAINER
+                    </a>
+                </li>
+                <li>
+                    <a href="web11hospitales.htm">
+                        HOSPITALES
+                    </a>
+                </li>
             </ol>
     </body>
 </html>
