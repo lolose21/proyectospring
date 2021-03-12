@@ -21,6 +21,11 @@
     <bean class="controllers.ControllerTenista" id="controllertenis"/>
     <bean  class="controllers.Controller10DepartamentosContainer" id="controller10"/>
     <bean class="controllers.Controller11Hospitales" id="controller11"/>
+    <bean class="controllers.Controller12Enfermos" id="controller12"/>
+    <bean  class="controllers.Controller13ContadorSession" id="controller13"/>
+    <bean  class="controllers.Controller14AlmacenarSalarios" id="controller14"/>
+    <bean  class="controllers.Controller15AlmacenarEmpleados" id="controller15"/>
+    <bean class="controllers.Controller15MostrarEmpleados" id="controller15mostrar"/>
 
     <!--
     Most controllers will use the ControllerClassNameHandlerMapping above, but
@@ -42,6 +47,12 @@
                 <prop key="webtenista.htm">controllertenis</prop>
                 <prop key="web10departamentoscontainer.htm">controller10</prop>
                 <prop key="web11hospitales.htm">controller11</prop>
+                <prop key="web12enfermos.htm">controller12</prop>
+                <prop key="web13contadorsession.htm">controller13</prop>
+                <prop key="web14almacenarsalario.htm">controller14</prop>
+                <prop key="web14mostrarsumasalarial.htm">mostrarSumaController</prop>
+                <prop key="web15almacenarempleados.htm">controller15</prop>
+                <prop key="web15mostrarempleados.htm">controller15mostrar</prop>
             </props>
         </property>
     </bean>
@@ -57,5 +68,10 @@
     <bean name="indexController"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="index" />
+
+
+    <bean name="mostrarSumaController"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="web14mostrarsumasalarial" />
 
 </beans>

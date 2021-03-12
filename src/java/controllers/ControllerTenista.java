@@ -3,6 +3,7 @@ package controllers;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import models.GrandSlam;
 import models.Tenista;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
@@ -24,6 +25,8 @@ public class ControllerTenista implements Controller {
         ModelAndView mv = new ModelAndView("webtenista");
         Tenista tenis = (Tenista) this.getBean("tenis", hsr.getServletContext());
         mv.addObject("TENIS", tenis);
+        GrandSlam slam = (GrandSlam) this.getBean("grandslam", hsr.getServletContext());
+        mv.addObject("GRANDSLAM", slam);
         return mv;
     }
 

@@ -62,6 +62,26 @@
                         HOSPITALES
                     </a>
                 </li>
+                <li>
+                    <a href="web12enfermos.htm">
+                        ELIMINAR ENFERMOS
+                    </a>
+                </li>
+                <li>
+                    <a href="web13contadorsession.htm">
+                        CONTADOR SESSION
+                    </a>
+                </li>
+                <li>
+                    <a href="web14almacenarsalario.htm">
+                        ALMACENAR SALARIO
+                    </a>
+                </li>
+                <li>
+                    <a href="web15almacenarempleados.htm">
+                        ALMACENAR EMPLEADOS
+                    </a>
+                </li>
             </ol>
     </body>
 </html>

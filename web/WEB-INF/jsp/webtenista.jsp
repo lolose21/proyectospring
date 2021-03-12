@@ -13,7 +13,10 @@
     <body>
         <h1>Tenista</h1>
         <h2 style="color:blue">
-            NOMBRE  : <c:out value="${TENIS.nombre}"/>
+            NOMBRE  : <c:out value="${GRANDSLAM.descripcion}"/>
+        </h2>
+        <h2 style="color:blue">
+            NOMBRE  : <c:out value="${GRANDSLAM.tenista.nombre}"/>
             <hr/>
             PALMARÉS  :  <c:out value="${TENIS.palmares}"/>
             <hr/>

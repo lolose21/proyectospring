@@ -1,0 +1,24 @@
+<%-- 
+   
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <h1>Ejemplo contador session</h1>
+        <form method="post">
+            <button type="submit" name="incremento" value="1">
+            INCREMENTAR
+            </button>
+        </form>
+        <h1 style="color:red">
+           CONTADOR: <c:out value="${CONTADOR}"/>
+        </h1>
+    </body>
+</html>
